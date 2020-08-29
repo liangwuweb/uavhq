@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <header>
+    <nav>
         <!-- Navbar -->
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand font-weight-bold" href="#">LOGO</a>
+                <a class="navbar-brand font-weight-bold" href="./index.html">LOGO</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,10 +25,18 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto ml-6">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT</a>
+                            <a class="nav-link" href="./site/about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCTION</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="myDropdown"
+                                href="./site/stream.html">LIVE STREAMING</a>
+                            <div class="dropdown-menu" aria-labelledby="myDropdown">
+                                <a href="./site/stream.html" class="dropdown-item">HOME</a>
+                                <a href="" class="dropdown-item">ABOUT</a>
+                                <a href="./site/stream_service.html" class="dropdown-item">SERVICE</a>
+                                <a href="" class="dropdown-item">WORK</a>
+                                <a href="" class="dropdown-item">INQUIRY</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="#">EDUCATION</a>
@@ -39,7 +47,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">JOB</a>
                         </li>
-
                     </ul>
                     <form class="form-inline mt-2 mt-md-0">
                         <button class="btn btn-info my-2 my-sm-0 font-weight-bold" type="submit">CONTACT</button>
@@ -47,7 +54,7 @@
                 </div>
             </nav>
         </div> <!-- Navbar Ends-->
-    </header>
+    </nav>
 
     <main role="main">
         <!-- Carousel -->
@@ -151,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Sponsors -->
+            <!-- sponsors -->
             <div class="row mb-4">
                 <div class="offset-md-2 col-md-8 text-center">
                     <h2 class="font-weight-bold mb-3">SPONSORS</h2>
@@ -174,10 +181,10 @@
                     <img class="img-fluid" src="./assets/image/logo.png" alt="logo placeholder">
                 </div>
             </div>
-        </div> <!-- Main Menu Ends-->
+        </div> <!-- main menu ends-->
     </main>
 
-
+    <!-- footer -->
     <footer>
         <div class="container pt-5 pb-2">
             <h3 class="col-12 text-center font-weight-bold pb-4 pt-4">LOGO</h3>
@@ -194,7 +201,7 @@
                 </div>
                 <div class="col text-right">
                     <h6 class="font-weight-bold pb-2">REACH TO US</h6>
-                    <a href="#" class="btn btn-lg btn-primary font-weight-bold">CONTACT</a>
+                    <a href="#" class="btn btn-lg btn-secondary font-weight-bold">CONTACT</a>
                 </div>
                 <div class="col-12 d-flex justify-content-center font-weight-bold">
                     <p class="extra-info mr-4">PRIVACY POLICY</p>
@@ -202,7 +209,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer><!-- /. footer ends -->
 
     <script src="./modules/js/jquery.min.js"></script>
     <script src="./modules/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,16 @@
+@mixin set-text-color($bgColor) {
+    @if lightness($bgColor)>50 {
+        color: $blue-600;
+    }
+
+    @else {
+        color: $light-blue;
+    }
+}
+
+@mixin bg-image($src) {
+    background-image: url($src);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

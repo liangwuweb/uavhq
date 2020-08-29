@@ -6,7 +6,12 @@ $blue-400: #6E7B93;
 $blue-500: #4E5E7C;
 $blue-600: #1E2330;
 
+// Text color
 $body-color:$blue-600;
+
+// Background color
+$bg-dark: $blue-500;
+$bg-light: $light-blue;
 
 $border-radius: .25rem;
 $navbar-padding-y: 0.75rem;
@@ -16,6 +21,7 @@ $spacer: 1rem;
 $spacers: (6: ($spacer * 5),7:($spacer * 7));
 $theme-colors: (
     "primary": $blue-600,
+    "secondary":$light-blue,
     "info": $blue-200
 );
 
@@ -32,3 +38,18 @@ $input-btn-font-size-lg: $font-size-lg;
 
 $h6-font-size: $font-size-base * 0.85;
 $h7-font-size: $font-size-base * 0.6;
+
+$navbar-padding-x: 0;
+
+// Badge
+$badge-padding-y: .6em;
+$badge-padding-x: .7em;
+
+// Cards
+$card-spacer-x: 2.25rem;
+$card-bg:$bg-light;
+$card-border-radius: 0;
+
+// Forms
+$input-border-radius-lg: 0;
+$input-border-width: 2px;
