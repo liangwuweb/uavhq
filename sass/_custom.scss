@@ -241,6 +241,7 @@ header {
 .live-streaming-service section:nth-of-type(5) {
     .row {
         background: $bg-light;
+
         .stream-home-img-4 {
             @include bg-image("../assets/image/2-4.svg");
         }
@@ -268,6 +269,7 @@ header {
 .live-streaming-about section:nth-of-type(3) {
     .row {
         background: $bg-light;
+
         .stream-home-img-4 {
             @include bg-image("../assets/image/2-4.svg");
         }
@@ -285,6 +287,7 @@ header {
 .live-streaming-work section:nth-of-type(3) {
     .row {
         background: $bg-light;
+
         .stream-home-img-4 {
             @include bg-image("../assets/image/2-4.svg");
         }
@@ -295,7 +298,50 @@ header {
 
 .live-streaming-inquiry section:nth-of-type(1) {
 
-    dt,dd {
+    dt,
+    dd {
         margin-bottom: 0;
+    }
+}
+
+////// Education homepage
+.education section:nth-of-type(2),
+.education section:nth-of-type(3) {
+    .row {
+        background: $bg-light;
+
+        .col-md-5 {
+            height: 420px;
+
+            h3 {
+                padding-top: 7rem;
+            }
+        }
+
+        .edu-img {
+            @include bg-image("../assets/image/3-2.svg");
+        }
+    }
+}
+
+////// Education partner info page
+.education-partner-info section:nth-of-type(2) {
+    .top {
+        .container {
+            background: $bg-light;
+        }
+    }
+
+}
+
+////// Education tutorial page
+.education-tutorial section:nth-of-type(1) {
+    .card {
+        h5 {
+            color: $blue-500;
+        }
+        p {
+            font-size: .85rem;
+        }
     }
 }

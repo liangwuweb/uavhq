@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>UAVHQ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/7bf6d10ee1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+    </nav><!-- Navbar Ends-->
+
+    <!--Main-->
+    <main role="main" class="education-partner-info">
+        <!-- Header-->
+        <div id="header-wrap"></div>
+        <!-- Section one-->
+        <section class="mb-7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <h2 class="font-weight-bold mb-3 pt-lg-5">HEADER</h2>
+                        <p class="mb-5">Labore et dolore magna aliqua. Lacinia quis vel eros donec. Tellus cras
+                            adipiscing enim eu
+                            turpis egestas pretium aenean pharetra. Nunc vel risus commodo viverra maecenas accumsan.
+                        </p>
+                        <a href="" class="btn btn-primary btn-lg font-weight-bold">VIEW PROGRAM</a>
+                    </div>
+                    <div class="col-md-5 offset-md-2">
+                        <img src="../assets/image/3c-2.svg" class="img-fluid" alt="top image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section two-->
+        <section>
+            <div class="top mb-5">
+                <div class="container py-6">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2>LOREM IPSUM</h2>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et
+                                netus. Lacus viverra vitae congue eu consequat. Velit ut tortor pretium viverra
+                                suspendisse potenti. Nec ultrices dui sapien eget mi proin sed. Pellentesque dignissim
+                                enim sit amet venenatis urna cursus eget nunc. Ipsum a arcu cursus vitae congue mauris
+                                rhoncus aenean. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom mb-7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="../assets/image/3c-3.svg" alt="image placeholder" class="img-fluid">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../assets/image/3c-3.svg" alt="image placeholder" class="img-fluid">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../assets/image/3c-3.svg" alt="image placeholder" class="img-fluid">
+                        </div>
+                        <div class="col-md-3">
+                            <img src="../assets/image/3c-3.svg" alt="image placeholder" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>
+    <!--Footer ends-->
+
+    <script src="../modules/js/jquery.min.js"></script>
+    <script src="../modules/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Import components and replace DOM data
+            $('#navbar').load('./components/navbar.html');
+            $('#header-wrap').load('./components/header.html', function () {
+                $('.badge').text('EDUCATION');
+                $('h1').text('PARTNER NAME');
+            });
+            $('#footer').load('./components/footer.html');
+        });
+    </script>
+</body>
+
+</html>
