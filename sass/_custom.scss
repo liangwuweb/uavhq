@@ -1,3 +1,4 @@
+////// Global Class
 .leading {
     letter-spacing: .2rem;
 }
@@ -18,7 +19,12 @@ nav {
     }
 }
 
-///////Home page (main)
+//Dropdown menu
+.dropdown-menu {
+    top: 133%;
+}
+
+///////Home Page (main)
 
 .carousel .carousel-item {
     height: 550px;
@@ -113,10 +119,9 @@ footer {
     }
 }
 
-//////About Page
+////// About Page
 .header {
-    @include bg-image("../assets/image/1-1.svg");
-    height: 400px;
+    @include bg-image("../assets/image/1-1.svg", 400px);
 
     h1 {
         padding-top: 18rem;
@@ -148,8 +153,8 @@ footer {
     @include bg-image("../assets/image/1-4.svg");
 }
 
-//////Streaming page
-header {
+////// Streaming Page
+.live-streaming header {
     @include bg-image("../assets/image/1-1.svg");
     height: 400px;
 
@@ -211,11 +216,18 @@ header {
     }
 
     .stream-home-img-4 {
-        @include bg-image("../assets/image/2-4.svg");
+        @include bg-image("../assets/image/2-4.svg", 230px);
     }
 }
 
-//////Streaming service page
+////// Streaming Service Page
+.live-streaming-service {
+    header {
+        @include bg-image("../assets/image/1-1.svg", 400px);
+        @include header-text();
+    }
+}
+
 .live-streaming-service section:nth-of-type(1),
 .live-streaming-service section:nth-of-type(2),
 .live-streaming-service section:nth-of-type(3) {
@@ -243,12 +255,19 @@ header {
         background: $bg-light;
 
         .stream-home-img-4 {
-            @include bg-image("../assets/image/2-4.svg");
+            @include bg-image("../assets/image/2-4.svg", 230px);
         }
     }
 }
 
-//////Streaming about page
+////// Streaming About Page
+.live-streaming-about {
+    header {
+        @include bg-image("../assets/image/1-1.svg", 400px);
+        @include header-text();
+    }
+}
+
 .live-streaming-about section:nth-of-type(2) {
     background: $bg-light;
 
@@ -271,12 +290,19 @@ header {
         background: $bg-light;
 
         .stream-home-img-4 {
-            @include bg-image("../assets/image/2-4.svg");
+            @include bg-image("../assets/image/2-4.svg", 230px);
         }
     }
 }
 
-////// Streaming work page
+////// Streaming Work Page
+.live-streaming-work {
+    header {
+        @include bg-image("../assets/image/1-1.svg", 400px);
+        @include header-text();
+    }
+}
+
 .live-streaming-work section:nth-of-type(1),
 .live-streaming-work section:nth-of-type(2) {
     .vid-img-top {
@@ -289,12 +315,18 @@ header {
         background: $bg-light;
 
         .stream-home-img-4 {
-            @include bg-image("../assets/image/2-4.svg");
+            @include bg-image("../assets/image/2-4.svg", 230px);
         }
     }
 }
 
-////// Streaming inquiry page
+////// Streaming Inquiry Page
+.live-streaming-inquiry {
+    header {
+        @include bg-image("../assets/image/1-1.svg", 400px);
+        @include header-text();
+    }
+}
 
 .live-streaming-inquiry section:nth-of-type(1) {
 
@@ -304,7 +336,14 @@ header {
     }
 }
 
-////// Education homepage
+////// Education Homepage
+.education {
+    header {
+        @include bg-image("../assets/image/1-1.svg", 400px);
+        @include header-text();
+    }
+}
+
 .education section:nth-of-type(2),
 .education section:nth-of-type(3) {
     .row {
@@ -324,7 +363,15 @@ header {
     }
 }
 
-////// Education partner info page
+// Header style
+#header-wrap {
+    header {
+        @include bg-image("../assets/image/1-1.svg", 400px);
+        @include header-text();
+    }
+}
+
+////// Education Partner Info Page
 .education-partner-info section:nth-of-type(2) {
     .top {
         .container {
@@ -334,14 +381,214 @@ header {
 
 }
 
-////// Education tutorial page
+////// Education Tutorial Page
 .education-tutorial section:nth-of-type(1) {
     .card {
         h5 {
             color: $blue-500;
         }
+
         p {
             font-size: .85rem;
         }
     }
+}
+
+////// League
+.league header {
+    @include bg-image("../assets/image/4-1.svg", 400px);
+}
+
+.league section:nth-of-type(1) {
+    .container {
+        h2 {
+            color: $blue-500;
+        }
+    }
+}
+
+.league section:nth-of-type(2) {
+    .container {
+        .league-menu {
+            width: 100%;
+            background: $bg-medium;
+            @include bg-image("../assets/image/4-2.svg", 540px);
+            position: relative;
+
+            h3 {
+                line-height: 2.4rem;
+                position: absolute;
+                left: 2.2rem;
+                bottom: 2rem;
+            }
+        }
+    }
+}
+
+////// League About Page
+
+// Slick carousel
+#slick {
+    background: $bg-dark;
+
+    h2 {
+        @include set-text-color($bg-dark);
+    }
+
+    .slider {
+        width: 100%;
+
+        .slick-slide {
+            margin: 0px 15px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .arrow {
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+
+    .arrow-prev {
+        @extend .arrow;
+        left: -27px;
+    }
+
+    .arrow-next {
+        @extend .arrow;
+        right: -27px;
+    }
+}
+
+// Locations
+.league-about section:nth-of-type(3) {
+    background: $bg-medium-dark;
+
+    .container {
+        .col-md-5 {
+            .text-wrap {
+                bottom: 0;
+                @include set-text-color($bg-dark);
+            }
+        }
+    }
+}
+
+// Our uvas
+.league-about section:nth-of-type(4) {
+    h2 {
+        color: $blue-500;
+    }
+
+    .league-about-img {
+        @include bg-image("../assets/image/4d-6.svg", 388px);
+
+        h2 {
+            padding: 20rem 0 0 2rem;
+        }
+    }
+}
+
+////// League Watch Page
+.league-watch section:nth-of-type(1) {
+    .container {
+        span {
+            font-size: $font-size-sm;
+        }
+    }
+}
+
+////// League Drone Page
+.league-drone section:nth-of-type(1) {
+    background: $bg-light;
+}
+
+.league-drone section:nth-of-type(2) {
+    .container {
+        .league-drone-bg-img {
+            @include bg-image("../assets/image/4b-2.svg", 400px);
+
+            .text-wrap {
+                left: 2.9rem;
+                bottom: 1.7rem;
+            }
+        }
+    }
+}
+
+.league-drone section:nth-of-type(4) {
+    .container {
+        .league-drone-bg-img {
+            @include bg-image("../assets/image/4b-6.svg", 400px);
+
+            .text-wrap {
+                left: 2.9rem;
+                bottom: 1.7rem;
+            }
+        }
+    }
+}
+
+////// League Pilot
+.league-pilot section:nth-of-type(1) {
+    .col-md-6 {
+        .img-wrap {
+            background: $bg-light;
+
+            .league-pilot-img {
+                &:hover {
+                    text-decoration: none;
+                }
+
+                background-image: url(../assets/image/4c-2.svg);
+                background-size: 234px;
+                background-position: 90% 100%;
+                background-repeat: no-repeat;
+                height: 241px;
+            }
+        }
+    }
+}
+
+////// League Profile
+.league-profile {
+    header {
+        background: $bg-medium-light;
+        .container {
+            .pilot-profile-img {
+                background-image: url(../assets/image/4c-2.svg);
+                background-size: 397px;
+                background-position: 24% 100%;
+                background-repeat: no-repeat;
+                height: 400px;
+                .social-media {
+                    font-size: $font-size-base * 1.8;
+                }
+            }
+        }
+    }
+    & section:nth-of-type(1) {
+        .container {
+            .row {
+                & .col-md-5:nth-of-type(2) {
+                    padding-top: $spacer * 2.8;
+                }
+            }
+        }
+    }
+& section:nth-of-type(2) {
+    .container {
+        h2 {
+            color: $blue-500;
+        }
+    }
+}
+
 }

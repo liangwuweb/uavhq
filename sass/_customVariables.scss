@@ -11,18 +11,22 @@ $body-color:$blue-600;
 
 // Background color
 $bg-dark: $blue-500;
+$bg-medium: $blue-200;
+$bg-medium-dark: $blue-300;
 $bg-light: $light-blue;
+$bg-medium-light: $blue-100;
 
 $border-radius: .25rem;
 $navbar-padding-y: 0.75rem;
 $btn-border-radius: $border-radius * 2;
 $btn-font-size: .8rem;
 $spacer: 1rem;
-$spacers: (6: ($spacer * 5),7:($spacer * 7));
+$spacers: (6: ($spacer * 5), 7:($spacer * 7), 6m: ($spacer * 6));
 $theme-colors: (
     "primary": $blue-600,
     "secondary":$light-blue,
-    "info": $blue-200
+    "info": $blue-200,
+    "light": $light-blue,
 );
 
 $carousel-indicator-width: 80px;
@@ -53,3 +57,10 @@ $card-border-radius: 0;
 // Forms
 $input-border-radius-lg: 0;
 $input-border-width: 2px;
+
+//Dropdown menu
+$dropdown-border-radius: 0;
+$dropdown-border-width: 0;
+
+//Sizes
+$sizes: (20: 20%);

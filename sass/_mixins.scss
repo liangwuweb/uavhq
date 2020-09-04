@@ -8,9 +8,27 @@
     }
 }
 
-@mixin bg-image($src) {
+@mixin bg-image($src, $height: 400px) {
     background-image: url($src);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: $height;
+}
+
+@mixin header-text() {
+    .header-wrap {
+        min-height: 100%;
+        position: relative;
+
+        .header-text-wrap {
+            position: absolute;
+            bottom: 3rem;
+        }
+
+        h1,
+        p {
+            letter-spacing: 0.2rem;
+        }
+    }
 }
