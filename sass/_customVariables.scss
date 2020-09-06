@@ -17,13 +17,17 @@ $bg-light: $light-blue;
 $bg-medium-light: $blue-100;
 
 $border-radius: .25rem;
-$navbar-padding-y: 0.75rem;
+
+// Nav
+$navbar-padding-y: 0;
+$nav-link-padding-y: 1.4rem;
+$navbar-brand-padding-y: 0;
+
 $btn-border-radius: $border-radius * 2;
 $btn-font-size: .8rem;
 $spacer: 1rem;
 $spacers: (6: ($spacer * 5), 7:($spacer * 7), 6m: ($spacer * 6));
-$theme-colors: (
-    "primary": $blue-600,
+$theme-colors: ("primary": $blue-600,
     "secondary":$light-blue,
     "info": $blue-200,
     "light": $light-blue,
@@ -61,6 +65,13 @@ $input-border-width: 2px;
 //Dropdown menu
 $dropdown-border-radius: 0;
 $dropdown-border-width: 0;
+$dropdown-min-width: 12rem;
+$dropdown-padding-y: 1rem;
+$dropdown-item-padding-y: .5rem;
 
 //Sizes
 $sizes: (20: 20%);
+
+//Global options
+$enable-caret: false;
+$enable-shadows: true;

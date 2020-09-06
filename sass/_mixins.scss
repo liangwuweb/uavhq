@@ -25,10 +25,15 @@
             position: absolute;
             bottom: 3rem;
         }
-
         h1,
         p {
             letter-spacing: 0.2rem;
         }
+    }
+}
+
+@mixin break($length) {
+    @media (min-width: $length) {
+        @content;
     }
 }

@@ -13,69 +13,14 @@
 </head>
 
 <body>
-    <nav>
-        <!-- Navbar -->
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand font-weight-bold" href="../index.html">LOGO</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto ml-6">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="myDropdown"
-                                href="./stream.html">LIVE STREAMING</a>
-                            <div class="dropdown-menu" aria-labelledby="myDropdown">
-                                <a href="./stream.html" class="dropdown-item">HOME</a>
-                                <a href="./stream_about.html" class="dropdown-item">ABOUT</a>
-                                <a href="./stream_service.html" class="dropdown-item">SERVICE</a>
-                                <a href="./stream_work.html" class="dropdown-item">WORK</a>
-                                <a href="./stream_inquiry.html" class="dropdown-item">INQUIRY</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">EDUCATION</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">LEAGUE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">MARKETPLACE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">JOB</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline mt-2 mt-md-0">
-                        <button class="btn btn-info my-2 my-sm-0 font-weight-bold" type="submit">CONTACT</button>
-                    </form>
-                </div>
-            </nav>
-        </div> <!-- Navbar Ends-->
-    </nav>
+    <!-- Navbar -->
+    <nav id="navbar">
+    </nav><!-- Navbar Ends-->
 
     <!--Main-->
     <main role="main" class="education">
-        <!-- header -->
-        <header class="mb-6">
-            <div class="container header-wrap">
-                <div class="row header-text-wrap mr-0">
-                    <div class="col-12 col-md-12 col-xl-9">
-                        <span class="badge badge-light mb-2">EDUCATION</span>
-                        <h1 class="font-weight-bold">UAV HQ EDUCATION</h1>
-                    </div>
-                    <div class="col-12 col-md-12 col-xl-7">
-                        <p class="font-weight-light">Quis risus sed vulputate odio ut enim blandit.
-                            Curabitur vitae nunc sed velit dignissim sodales vulputate nunc. </p>
-                    </div>
-                </div>
-            </div>
-        </header>
+        <!-- Header-->
+        <div id="header-wrap"></div>
 
         <!--Section one-->
         <section class="mb-6">
@@ -136,36 +81,25 @@
             </div>
         </section>
 
-        <!-- footer -->
-        <footer>
-            <div class="container pt-5 pb-2">
-                <h3 class="col-12 text-center font-weight-bold pb-4 pt-4">LOGO</h3>
-                <div class="row">
-                    <div class="col">
-                        <h6 class="font-weight-bold pb-2">FOLLOW US</h6>
-                        <ul class="list-unstyled social-media d-flex">
-                            <li><a class="" href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a class="" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="" href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a class="" href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a class="" href="#"><i class="fab fa-twitch"></i></a></li>
-                        </ul>
-                    </div>
-                    <div class="col text-right">
-                        <h6 class="font-weight-bold pb-2">REACH TO US</h6>
-                        <a href="#" class="btn btn-lg btn-secondary font-weight-bold">CONTACT</a>
-                    </div>
-                    <div class="col-12 d-flex justify-content-center font-weight-bold">
-                        <p class="extra-info mr-4">PRIVACY POLICY</p>
-                        <p class="extra-info">TERMS & CONDITIONS</p>
-                    </div>
-                </div>
-            </div>
-        </footer><!-- /. footer ends -->
+        <!-- Footer -->
+        <footer id="footer">
+        </footer>
+        <!--Footer ends-->
 
         <script src="../modules/js/jquery.min.js"></script>
         <script src="../modules/js/bootstrap.bundle.min.js"></script>
         <script src="../js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+                //Import components and replace DOM data
+                $('#navbar').load('./components/navbar.html');
+                $('#header-wrap').load('./components/header.html', function () {
+                    $('.badge').text('EDUCATION');
+                    $('h1').text('UAV HQ EDUCATION');
+                });
+                $('#footer').load('./components/footer.html');
+            });
+        </script>
 </body>
 
 </html>
