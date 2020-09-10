@@ -2,8 +2,8 @@ $(document).ready(function () {
     $('.carousel').carousel({
         interval: 5000,
         pause: false
-    }) 
-    
+    })
+
     //Modal
     $('#universeModal').on('shown.bs.modal', function (event) {
         var card = $(event.relatedTarget); // Card that triggered the modal
@@ -19,4 +19,22 @@ $(document).ready(function () {
             modal.find('#video').attr('src', '');
         });
     })
+
+    //Navbar toggle icon
+    $('#navbarCollapse').on('show.bs.collapse', function () {
+        $('.animated-icon2').addClass('open');
+        $(this).on('hide.bs.collapse', function () {
+            $('.animated-icon2').removeClass('open');
+        })
+    })
+
+    //Remove box-shadow in small screen
+    // var width = $(window).width();
+    // if (width < 992) {
+    //     $('.dropdown-menu').addClass('shadow-none')
+    // } else if (width >= 992) {
+    //     $('.dropdown-menu').addClass('shadow')
+    // }
+
+    // $(window).resize
 });
