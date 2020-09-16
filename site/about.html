@@ -29,7 +29,7 @@
             <div class="container pt-7 pb-6">
                 <div class="row">
                     <div class="col-md-5 offset-md-1">
-                        <h2 class="font-weight-bold">
+                        <h2 class="font-weight-bold mb-3 mb-md-2">
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod
                         </h2>
@@ -50,7 +50,7 @@
         <section>
             <div class="container py-6">
                 <div class="row">
-                    <div class="col-md-5 about-image">
+                    <div class="col-md-5 about-image mx-3 mx-md-0 mb-4 mb-md-0">
 
                     </div>
                     <div class="offset-md-1 col-md-5">
@@ -84,7 +84,7 @@
         </section>
         <!-- section four -->
         <section>
-            <div class="container py-6">
+            <div class="container pt-xl-6">
                 <div class="row">
                     <div class="offset-md-6 col-md-5 pt-5">
                         <h2 class="font-weight-bold pb-2">LEAGUE</h2>
@@ -108,16 +108,15 @@
     <script src="../modules/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <script>
-        $(document).ready(function () {
-            //Import components and replace DOM data
-            $('#navbar').load('./components/navbar.html');
-            $('#header-wrap').load('./components/header.html', function () {
-                $('.badge').text('LEAGUE');
-                $('h1').text('UAV VIDEO');
-            });
-            $('#footer').load('./components/footer.html');
+        //Import components and replace DOM data
+        $('#navbar').load('./components/navbar.html');
+        $('#header-wrap').load('./components/header.html', function () {
+            $('.badge').text('LEAGUE');
+            $('h1').text('UAV VIDEO');
         });
+        $('#footer').load('./components/footer.html');
     </script>
+
 </body>
 
 </html>

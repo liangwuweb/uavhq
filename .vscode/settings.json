@@ -1,20 +1,30 @@
 {
+    "window.zoomLevel": 0,
+    "editor.wordWrap": "on",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Default Light+",
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.formatOnPaste": true,
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "explorer.confirmDelete": false,
+    "editor.formatOnSave": true,
+    "zenMode.centerLayout": false,
+    "files.autoSave": "afterDelay",
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
     "liveSassCompile.settings.formats": [{
         "format": "expanded",
         "extensionName": ".css",
         "savePath": "/css"
     }],
-    "liveSassCompile.settings.excludeList": [
-        "**/node_modules/**",
-        ".vscode/**"
-    ],
-    "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.includeItems": [
         "sass/style.scss"
     ],
-    "liveSassCompile.settings.autoprefix": [
-        "> 1%",
-        "last 2 versions"
-    ],
-    "liveServer.settings.port": 5501
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.donotVerifyTags": true
 }

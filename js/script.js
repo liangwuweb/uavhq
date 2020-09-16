@@ -20,21 +20,25 @@ $(document).ready(function () {
         });
     })
 
-    //Navbar toggle icon
-    $('#navbarCollapse').on('show.bs.collapse', function () {
+    // Navbar toggle icon
+    $(document).on('show.bs.collapse', '#navbarCollapse', function (e) {
         $('.animated-icon2').addClass('open');
         $(this).on('hide.bs.collapse', function () {
             $('.animated-icon2').removeClass('open');
+            $('.bg-overlay').removeClass('bg-overlay-show');
+            $('body').removeClass('no-scroll');
         })
-    })
+        $('.bg-overlay').addClass('bg-overlay-show');
+        $('body').addClass('no-scroll');
+    });
 
-    //Remove box-shadow in small screen
-    // var width = $(window).width();
-    // if (width < 992) {
-    //     $('.dropdown-menu').addClass('shadow-none')
-    // } else if (width >= 992) {
-    //     $('.dropdown-menu').addClass('shadow')
-    // }
-
-    // $(window).resize
+    //Dropdown toggle icon
+    $(document).on('show.bs.dropdown', '.dropdown', function (e) {
+        $(this).find('.dropdown-icon').addClass('rotate');
+        $(this).find('.dropdown-menu').slideDown(200);
+        $(this).on('hide.bs.dropdown', function () {
+            $('.dropdown-icon').removeClass('rotate');
+            $(this).find('.dropdown-menu').slideUp(200);
+        })
+    });
 });

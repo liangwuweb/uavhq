@@ -152,13 +152,15 @@
     <script type="text/javascript" src="../modules/slick/slick.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
     <script>
+        //Import components and replace DOM data
+        $('#navbar').load('./components/navbar.html');
+        $('#header-wrap').load('./components/header.html', function () {
+            $('.badge').text('LEAGUE');
+            $('h1').text('ABOUT UAVHQ LEAGUE');
+        });
+        $('#footer').load('./components/footer.html');
+
         $(document).ready(function () {
-            //Import components and replace DOM data
-            $('#navbar').load('./components/navbar.html');
-            $('#header-wrap').load('./components/header.html', function () {
-                $('.badge').text('LEAGUE');
-                $('h1').text('ABOUT UAVHQ LEAGUE');
-            });
             $(".regular").slick({
                 infinite: true,
                 slidesToShow: 3,
@@ -166,8 +168,6 @@
                 prevArrow: '.arrow-prev',
                 nextArrow: '.arrow-next'
             });
-            $('#footer').load('./components/footer.html');
-
         });
     </script>
 </body>

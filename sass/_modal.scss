@@ -1,0 +1,52 @@
+// Modal 
+.modal-backdrop {
+    background-color: #1D222F;
+    opacity: .85 !important;
+}
+
+
+.modal-header .close {
+    & {
+        @include break-max(600px) {
+            right: 0 !important;
+            top: -45px !important;
+        }
+    }
+}
+
+#universeModal {
+    .modal-header {
+        padding: 0 0;
+        border-bottom: 0;
+
+        .close {
+            position: absolute;
+            right: -45px;
+            top: 0;
+            color: $light-blue;
+            opacity: 1;
+            background: $blue-500;
+            padding: 0 0;
+            margin: 0 0;
+            width: 45px;
+            height: 45px;
+
+            &:hover {
+                background: $blue-400;
+            }
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+.modal-content p {
+    @include break-max(600px) {
+        display: none;
+    }
+}

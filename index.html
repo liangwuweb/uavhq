@@ -18,9 +18,8 @@
         <div class="container-lg nav-container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand font-weight-bold" href="index.html">LOGO</a>
-                <button class="navbar-toggler second-button" data-toggle="collapse"
-                    data-target="#navbarCollapse" aria-controls="navbarCollapse"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler second-button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon2">
                         <span></span>
                         <span></span>
@@ -28,15 +27,19 @@
                         <span></span>
                     </div>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto ml-lg-6">
                         <li class="nav-item">
                             <a class="nav-link" href="./site/about.html">ABOUT</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="myDropdown" href="#">LIVE
-                                STREAMING</a>
-                            <div class="dropdown-menu demo" aria-labelledby="myDropdown">
+                            <a class="nav-link dropdown-toggle d-flex d-lg-block justify-content-between align-items-center"
+                                data-toggle="dropdown" id="myDropdown" href="#">
+                                <span>LIVE STREAMING</span>
+                                <div class="dropdown-icon d-lg-none"></div>
+                            </a>
+                            <div class="dropdown-menu shadow" aria-labelledby="myDropdown">
                                 <a href="./site/stream.html" class="dropdown-item">HOME</a>
                                 <a href="./site/stream_about.html" class="dropdown-item">ABOUT</a>
                                 <a href="./site/stream_service.html" class="dropdown-item">SERVICE</a>
@@ -45,18 +48,25 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="eudDropdown"
-                                href="#">EDUCATION</a>
-                            <div class="dropdown-menu" aria-labelledby="eudDropdown">
+                            <a class="nav-link dropdown-toggle d-flex d-lg-block justify-content-between align-items-center"
+                                data-toggle="dropdown" id="eudDropdown" href="#">
+                                <span>EDUCATION</span>
+                                <div class="dropdown-icon d-lg-none"></div>
+                            </a>
+                            <div class="dropdown-menu shadow" aria-labelledby="eudDropdown">
                                 <a href="./site/edu.html" class="dropdown-item">HOME</a>
                                 <a href="./site/edu_partner.html" class="dropdown-item">PARTNER</a>
                                 <a href="./site/edu_tutorial.html" class="dropdown-item">TUTORIAL</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                                id="leagueDropdown">LEAGUE</a>
-                            <div class="dropdown-menu" aria-labelledby="leagueDropdown">
+                            <a href="#"
+                                class="nav-link dropdown-toggle d-flex d-lg-block justify-content-between align-items-center"
+                                data-toggle="dropdown" id="leagueDropdown">
+                                <span>LEAGUE</span>
+                                <div class="dropdown-icon d-lg-none"></div>
+                            </a>
+                            <div class="dropdown-menu shadow" aria-labelledby="leagueDropdown">
                                 <a href="./site/league.html" class="dropdown-item">HOME</a>
                                 <a href="./site/league_about.html" class="dropdown-item">ABOUT</a>
                                 <a href="./site/league_watch.html" class="dropdown-item">WATCH</a>
@@ -67,7 +77,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">MARKETPLACE</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item border-bottom-0">
                             <a class="nav-link" href="#">JOB</a>
                         </li>
                     </ul>
@@ -78,6 +88,9 @@
             </nav>
         </div> <!-- Navbar Ends-->
     </nav>
+
+    <!-- Background overlay show up when togggle navbar-->
+    <div class="bg-overlay"></div>
 
     <main role="main">
         <!-- Carousel -->
@@ -101,7 +114,7 @@
             <div class="hero-wrap d-flex justify-content-center">
                 <div class="d-flex flex-column justify-content-center hero-container">
                     <h1 class="text-center font-weight-bold">UAVHQ ONLINE</h1>
-                    <p class="lead">
+                    <p class="lead text-center">
                         proidentsunt in culpa qui officia deserunt
                     </p>
                     <a class="btn btn-lg btn-primary mx-auto mt-4" href="#" role="button">LEARN
@@ -114,13 +127,13 @@
         <!-- Main Menu -->
         <div class="container">
             <div class="row mb-4">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3 mb-md-0">
                     <a class="catergory" href="#">
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="catergory-text ml-5">
                                     <h3>LIVE STREAMING</h3>
-                                    <p class="font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    <p class="font-weight-light d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipiscing
                                         elit
                                     </p>
                                 </div>
@@ -134,7 +147,7 @@
                             <div class="col-md-9">
                                 <div class="catergory-text ml-5">
                                     <h3>MARKETPLACE</h3>
-                                    <p class="font-weight-light">Lorem ipsum dolor consectetur adipiscing adipiscing
+                                    <p class="font-weight-light d-none d-md-block">Lorem ipsum dolor consectetur adipiscing adipiscing
                                         elit</p>
                                 </div>
                             </div>
@@ -144,13 +157,13 @@
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-3 mb-md-0">
                     <div class="catergory">
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="catergory-text ml-5">
                                     <h3>LEAGUE</h3>
-                                    <p class="font-weight-light">Ut enim ad minim veniam, quis nostrud exercitation loem
+                                    <p class="font-weight-light d-none d-md-block">Ut enim ad minim veniam, quis nostrud exercitation loem
                                         youn </p>
                                 </div>
                             </div>
@@ -163,7 +176,7 @@
                             <div class="col-md-9">
                                 <div class="catergory-text ml-5">
                                     <h3>EDUCATION</h3>
-                                    <p class="font-weight-light">Ut enim ad minim veniam, quis nostrud exercitation loem
+                                    <p class="font-weight-light d-none d-md-block">Ut enim ad minim veniam, quis nostrud exercitation loem
                                         youn </p>
                                 </div>
                             </div>
@@ -173,8 +186,8 @@
             </div>
             <div class="row mb-7">
                 <div class="col-md-12">
-                    <div class="twitch-wrap d-flex align-items-center">
-                        <div class="pl-7">
+                    <div class="twitch-wrap d-flex align-items-center justify-content-center justify-content-md-start">
+                        <div class="text-center pl-0 pl-md-7">
                             <h2 class="font-weight-bold mb-4">VISIT OUT TWITCH CHANNEL</h2>
                             <a class="btn btn-lg btn-primary" href="#">LEARN MORE</a>
                         </div>
@@ -191,16 +204,16 @@
                 </div>
             </div>
             <div class="row mb-7">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3 mb-md-0">
                     <img class="img-fluid" src="./assets/image/logo.png" alt="logo placeholder">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3 mb-md-0">
                     <img class="img-fluid" src="./assets/image/logo.png" alt="logo placeholder">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3 mb-md-0">
                     <img class="img-fluid" src="./assets/image/logo.png" alt="logo placeholder">
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3 mb-md-0">
                     <img class="img-fluid" src="./assets/image/logo.png" alt="logo placeholder">
                 </div>
             </div>
@@ -212,9 +225,10 @@
         <div class="container pt-5 pb-2">
             <h3 class="col-12 text-center font-weight-bold pb-4 pt-4">LOGO</h3>
             <div class="row">
-                <div class="col">
-                    <h6 class="font-weight-bold pb-2">FOLLOW US</h6>
-                    <ul class="list-unstyled social-media d-flex">
+                <hr class="my-0">
+                <div class="col-12 col-sm-6 py-5 py-sm-0">
+                    <h6 class="font-weight-bold pb-2 text-center text-sm-left">FOLLOW US</h6>
+                    <ul class="list-unstyled social-media d-flex justify-content-center justify-content-sm-start mb-0 mb-sm-3">
                         <li><a class="" href="#"><i class="fab fa-instagram"></i></a></li>
                         <li><a class="" href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a class="" href="#"><i class="fab fa-twitter"></i></a></li>
@@ -222,11 +236,13 @@
                         <li><a class="" href="#"><i class="fab fa-twitch"></i></a></li>
                     </ul>
                 </div>
-                <div class="col text-right">
+                <hr class="my-0">
+                <div class="col-12 col-sm-6 text-center text-sm-right py-5 py-sm-0">
                     <h6 class="font-weight-bold pb-2">REACH TO US</h6>
                     <a href="#" class="btn btn-lg btn-secondary font-weight-bold">CONTACT</a>
                 </div>
-                <div class="col-12 d-flex justify-content-center font-weight-bold">
+                <hr class="my-0">
+                <div class="col-12 d-flex justify-content-center font-weight-bold pt-4 pt-sm-0">
                     <p class="extra-info mr-4">PRIVACY POLICY</p>
                     <p class="extra-info">TERMS & CONDITIONS</p>
                 </div>
