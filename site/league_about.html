@@ -17,6 +17,9 @@
     <nav id="navbar">
     </nav><!-- Navbar Ends-->
 
+    <!-- Background overlay show up when togggle navbar-->
+    <div class="bg-overlay"></div>
+
     <!-- Main -->
     <main role="main" class="league-about">
         <!-- Header-->
@@ -109,7 +112,7 @@
                         <img src="../assets/image//4d-5.svg" alt="location image" class="img-fluid">
                     </div>
                     <div class="col-md-5 position-relative">
-                        <div class="text-wrap position-absolute ">
+                        <div class="text-wrap pt-4 pt-md-0">
                             <h2 class="font-weight-bold leading">LOCATIONS</h2>
                             <p class="lead mb-0">Suspendisse sed nisi lacus sed viverra. Neque ornare aenean euismod
                                 elementum
@@ -126,7 +129,7 @@
             <h2 class="font-weight-bold leading text-center pb-4">OUR UAVS</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-4 mb-md-0">
                         <div class="league-about-img">
                             <h2 class="font-weight-bold text-light leading">UAV ONE</h2>
                         </div>
@@ -166,7 +169,18 @@
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 prevArrow: '.arrow-prev',
-                nextArrow: '.arrow-next'
+                nextArrow: '.arrow-next',
+                responsive: [{
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
             });
         });
     </script>

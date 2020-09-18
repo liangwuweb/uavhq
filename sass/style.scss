@@ -1,8 +1,8 @@
 @import "customVariables";
 @import "mixins";
 @import "../modules/bootstrap-sass/bootstrap";
+@import "../modules/bootstrap-sass/vendor/rfs";
 @import "global";
 @import "navbar";
 @import "modal";
 @import "custom";
-

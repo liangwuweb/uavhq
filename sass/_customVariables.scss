@@ -70,11 +70,12 @@ $dropdown-padding-y: 1rem;
 $dropdown-item-padding-y: .5rem;
 
 //Sizes
-$sizes: (20: 20%);
+$sizes: (20: 20%, 30: 30%);
 
 //Global options
 $enable-caret: false;
 $enable-prefers-reduced-motion-media-query: false;
+$enable-responsive-font-sizes: true;
 
 // Modal 
 $modal-lg: 730px;

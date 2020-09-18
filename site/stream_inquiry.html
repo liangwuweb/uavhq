@@ -17,6 +17,9 @@
     <nav id="navbar">
     </nav><!-- Navbar Ends-->
 
+    <!-- Background overlay show up when togggle navbar-->
+    <div class="bg-overlay"></div>
+
     <!--Main-->
     <main role="main" class="live-streaming-inquiry">
         <!-- Header-->
@@ -61,8 +64,8 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="row justify-content-between">
-                            <div class="col-md-auto">
-                                <h4 class="font-weight-bold pb-2">CONTACT US</h4>
+                            <div class="col-lg-auto mb-5 mb-lg-0">
+                                <h4 class="font-weight-bold pb-2 title">CONTACT US</h4>
                                 <address>
                                     1355 Market St, Suite 900<br />
                                     San Francisco, CA 94103<br />
@@ -70,7 +73,7 @@
                                     <abbr title="Email">Email:</abbr> 7ht7v80@temporary-mail.net
                                 </address>
                             </div>
-                            <div class="col-md-auto">
+                            <div class="col-lg-auto">
                                 <h4 class="font-weight-bold pb-2">WORKING HOURS</h4>
                                 <dl class="row mx-0">
                                     <div class="title-wrap pr-6">
@@ -90,7 +93,6 @@
                                         <dd class="">10am–10pm</dd>
                                     </div>
                                 </dl>
-
                             </div>
                         </div>
                     </div>
@@ -108,13 +110,13 @@
     <script src="../modules/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <script>
-            //Import components and replace DOM data
-            $('#navbar').load('./components/navbar.html');
-            $('#header-wrap').load('./components/header.html', function () {
-                $('.badge').text('STREAMING');
-                $('h1').text('OUR WORK');
-            });
-            $('#footer').load('./components/footer.html');
+        //Import components and replace DOM data
+        $('#navbar').load('./components/navbar.html');
+        $('#header-wrap').load('./components/header.html', function () {
+            $('.badge').text('STREAMING');
+            $('h1').text('OUR WORK');
+        });
+        $('#footer').load('./components/footer.html');
     </script>
 </body>
 

@@ -16,18 +16,21 @@
     <nav id="navbar">
     </nav><!-- Navbar Ends-->
 
+    <!-- Background overlay show up when togggle navbar-->
+    <div class="bg-overlay"></div>
+
     <main class="league-profile" role="main">
         <!-- Header -->
         <header class="mb-6">
             <div class="container">
                 <div class="pilot-profile-img d-flex align-items-end pb-5">
                     <div class="wrap w-100 d-flex justify-content-between align-items-center">
-                        <div class="decsription w-20">
+                        <div class="decsription w-30 d-none d-md-block w-lg-20">
                             <h5>Short Description</h5>
                             <p class="font-weight-light">Commodo ullamcorper a lacus vestibulum sed arcu non odio
                                 euismod arcu.</p>
                         </div>
-                        <h1 class="font-weight-bold align-self-start mt-n7">FULL NAME</h1>
+                        <h1 class="font-weight-bold align-self-start mt-md-n7">FULL NAME</h1>
                         <div class="social-media">
                             <span><a href="#"><i class="fab fa-instagram"></i></a></span>
                             <span><a href="#"><i class="fab fa-youtube"></i></a></span>
@@ -202,9 +205,9 @@
     <script type="text/javascript" src="../modules/slick/slick.min.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
     <script>
-            //Import components and replace DOM data
-            $('#navbar').load('./components/navbar.html');
-            $('#footer').load('./components/footer.html');
+        //Import components and replace DOM data
+        $('#navbar').load('./components/navbar.html');
+        $('#footer').load('./components/footer.html');
     </script>
 </body>
 

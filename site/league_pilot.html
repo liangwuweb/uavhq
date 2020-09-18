@@ -16,6 +16,9 @@
      <nav id="navbar">
      </nav><!-- Navbar Ends-->
 
+     <!-- Background overlay show up when togggle navbar-->
+     <div class="bg-overlay"></div>
+
      <!-- Main -->
      <main role="main" class="league-pilot">
          <!-- Header -->
@@ -84,13 +87,13 @@
      <script type="text/javascript" src="../modules/slick/slick.min.js"></script>
      <script type="text/javascript" src="../js/script.js"></script>
      <script>
-             //Import components and replace DOM data
-             $('#navbar').load('./components/navbar.html');
-             $('#header-wrap').load('./components/header.html', function () {
-                 $('.badge').text('LEAGUE');
-                 $('h1').text('PILOTS');
-             });
-             $('#footer').load('./components/footer.html');
+         //Import components and replace DOM data
+         $('#navbar').load('./components/navbar.html');
+         $('#header-wrap').load('./components/header.html', function () {
+             $('.badge').text('LEAGUE');
+             $('h1').text('PILOTS');
+         });
+         $('#footer').load('./components/footer.html');
      </script>
  </body>
 

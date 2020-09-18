@@ -17,6 +17,9 @@
     <nav id="navbar">
     </nav><!-- Navbar Ends-->
 
+    <!-- Background overlay show up when togggle navbar-->
+    <div class="bg-overlay"></div>
+
     <!-- Main -->
     <main role="main" class="live-streaming-about">
         <!-- Header-->
@@ -39,7 +42,7 @@
             <div class="container">
                 <h2 class="font-weight-bold leading text-center pt-6 pb-5">OBJECTIVE</h2>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3 mb-md-0">
                         <div class="stream-service-img-1 position-relative d-flex justify-content-center">
                             <div class="text-wrap position-absolute">
                                 <h3 class="font-weight-bold leading">SERVICE ONE</h3>
@@ -71,7 +74,7 @@
         <section class="mb-7">
             <div class="container">
                 <div class="row mx-0 py-6">
-                    <div class="offset-md-1 col-md-5">
+                    <div class="offset-md-1 col-md-5 pb-3 pb-md-0 order-1 order-sm-0">
                         <h3 class="font-weight-bold pb-2 leading">GET IN TOUCH</h3>
                         <p class="font-weight-light pb-4"> labore et dolore magna aliqua. Lacinia quis vel eros
                             donec.
@@ -80,7 +83,7 @@
                             commodo viverra maecenas accumsan. </p>
                         <a href="#" class="btn btn-primary btn-lg font-weight-bold">GET TOUCH</a>
                     </div>
-                    <div class="col-md-4 offset-md-1 stream-home-img-4">
+                    <div class="col-md-4 offset-md-1 stream-home-img-4 mx-3 mx-md-auto order-0 order-sm-1 mb-3 mb-md-0">
                     </div>
                 </div>
             </div>
@@ -97,13 +100,13 @@
     <script src="../modules/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <script>
-            //Import components and replace DOM data
-            $('#navbar').load('./components/navbar.html');
-            $('#header-wrap').load('./components/header.html', function () {
-                $('.badge').text('STREAMING');
-                $('h1').text('ABOUT UAVHQ PRODUCTION');
-            });
-            $('#footer').load('./components/footer.html');
+        //Import components and replace DOM data
+        $('#navbar').load('./components/navbar.html');
+        $('#header-wrap').load('./components/header.html', function () {
+            $('.badge').text('STREAMING');
+            $('h1').text('ABOUT UAVHQ PRODUCTION');
+        });
+        $('#footer').load('./components/footer.html');
     </script>
 </body>
 

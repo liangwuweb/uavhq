@@ -179,8 +179,11 @@ footer {
     }
 
     .stream-home-img-2 {
-        height: 290px;
         @include bg-image("../assets/image/1-3.svg", auto);
+
+        @include break-max(768px) {
+            height: 230px;
+        }
     }
 }
 
@@ -196,17 +199,41 @@ footer {
     .stream-home-img-2 {
         height: 290px;
         @include bg-image("../assets/image/1-3.svg", auto);
+
+        @include break-max(768px) {
+            height: 230px;
+        }
     }
 }
 
 .live-streaming section:nth-of-type(3) {
+    @include break-max(576px) {
+        h3 {
+            font-size: $font-size-base * 1.3;
+        }
+
+        p {
+            font-size: $font-size-base * 1;
+        }
+    }
+
+    @include break-min-max(576px, 992px) {
+        h3 {
+            font-size: $font-size-base * 1.55;
+        }
+
+        p {
+            font-size: $font-size-base * 1.15;
+        }
+    }
+
     .stream-home-img-3 {
         @include bg-image("../assets/image/2-4.svg");
     }
 }
 
 .live-streaming section:nth-of-type(4) {
-    .container {
+    .row {
         background: $bg-light;
     }
 
@@ -226,9 +253,17 @@ footer {
 .live-streaming-service section:nth-of-type(1),
 .live-streaming-service section:nth-of-type(2),
 .live-streaming-service section:nth-of-type(3) {
-    .col-md-4 {
+    .col-lg-4 {
         background: $bg-dark;
         height: 330px;
+
+        @include break-max(576px) {
+            height: 400px;
+
+            h3 {
+                font-size: $font-size-base * 1.45;
+            }
+        }
 
         .wrap {
             width: 85%;
@@ -236,7 +271,7 @@ footer {
         }
     }
 
-    .col-md-8 {
+    .col-lg-8 {
         background: $bg-light;
     }
 }
@@ -317,7 +352,6 @@ footer {
 
 
 
-
 ////// Streaming Inquiry Page
 .live-streaming-inquiry {
     header {
@@ -327,6 +361,14 @@ footer {
 }
 
 .live-streaming-inquiry section:nth-of-type(1) {
+    h4 {
+        @include rfs(1.25rem);
+    }
+
+    address,
+    dl {
+        @include rfs(1rem);
+    }
 
     dt,
     dd {
@@ -352,11 +394,21 @@ footer {
 
             h3 {
                 padding-top: 7rem;
+
+                & {
+                    @include break-max(992px) {
+                        padding-top: 5rem;
+                    }
+                }
             }
         }
 
         .edu-img {
-            @include bg-image("../assets/image/3-2.svg");
+            @include bg-image("../assets/image/3-2.svg", 420px);
+
+            @include break-max(576px) {
+                height: 350px;
+            }
         }
     }
 }
@@ -413,6 +465,10 @@ footer {
             @include bg-image("../assets/image/4-2.svg", 540px);
             position: relative;
 
+            @include break-min-max(576px, 992px) {
+                height: 400px;
+            }
+
             h3 {
                 line-height: 2.4rem;
                 position: absolute;
@@ -457,11 +513,27 @@ footer {
     .arrow-prev {
         @extend .arrow;
         left: -27px;
+
+        @include break-min-max(576px, 992px) {
+            left: -24px;
+        }
+
+        @include break-max(576px) {
+            left: 0px;
+        }
     }
 
     .arrow-next {
         @extend .arrow;
         right: -27px;
+
+        @include break-min-max(576px, 992px) {
+            right: -24px;
+        }
+
+        @include break-max(576px) {
+            right: 0px;
+        }
     }
 }
 
@@ -472,8 +544,23 @@ footer {
     .container {
         .col-md-5 {
             .text-wrap {
+                position: absolute;
                 bottom: 0;
                 @include set-text-color($bg-dark);
+
+                @include break-max(992px) {
+                    h2 {
+                        font-size: 1.35rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+
+                @include break-max(576px) {
+                    position: static;
+                }
             }
         }
     }
@@ -503,6 +590,10 @@ footer {
 
         span {
             font-size: $font-size-sm;
+
+            @include break-max(992px) {
+                font-size: $font-size-base * 0.75;
+            }
         }
     }
 }
@@ -571,6 +662,10 @@ footer {
                 background-position: 24% 100%;
                 background-repeat: no-repeat;
                 height: 400px;
+
+                @include break-max(576px) {
+                    background-size: 287px;
+                }
 
                 .social-media {
                     font-size: $font-size-base * 1.8;

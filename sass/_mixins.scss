@@ -45,6 +45,12 @@
     }
 }
 
+@mixin break-min-max($minLength, $maxLength) {
+     @media (min-width: $minLength) and (max-width: $maxLength) {
+         @content;
+     }
+}
+
 @mixin video-card() {
     text-decoration: none;
 

@@ -17,6 +17,9 @@
     <nav id="navbar">
     </nav><!-- Navbar Ends-->
 
+    <!-- Background overlay show up when togggle navbar-->
+    <div class="bg-overlay"></div>
+
     <!--Main-->
     <main role="main" class="education">
         <!-- Header-->
@@ -90,13 +93,13 @@
         <script src="../modules/js/bootstrap.bundle.min.js"></script>
         <script src="../js/script.js"></script>
         <script>
-                //Import components and replace DOM data
-                $('#navbar').load('./components/navbar.html');
-                $('#header-wrap').load('./components/header.html', function () {
-                    $('.badge').text('EDUCATION');
-                    $('h1').text('UAV HQ EDUCATION');
-                });
-                $('#footer').load('./components/footer.html');
+            //Import components and replace DOM data
+            $('#navbar').load('./components/navbar.html');
+            $('#header-wrap').load('./components/header.html', function () {
+                $('.badge').text('EDUCATION');
+                $('h1').text('UAV HQ EDUCATION');
+            });
+            $('#footer').load('./components/footer.html');
         </script>
 </body>
 
