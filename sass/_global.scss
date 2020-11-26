@@ -1,4 +1,8 @@
 ////// Global Class
+body {
+ background: $darker-blue;
+}
+
 .leading {
     letter-spacing: .2rem;
 }
@@ -19,7 +23,7 @@
     }
 
     .dropdown-item {
-        font-weight: $font-weight-bold;
+        font-weight: $font-weight-normal;
     }
 }
 
@@ -28,12 +32,15 @@ button:focus {
     outline: 0;
 }
 
+.btn {
+    border-radius: 0;
+}
 
 //Background Overlay
 .bg-overlay-show {
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 888;
     position: fixed;
     background: #1e2330d6;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+
 $light-blue: #F3F5F9;
 $blue-100: #DCE4EF;
 $blue-200: #A6B2C9;
@@ -5,6 +7,13 @@ $blue-300: #8690A4;
 $blue-400: #6E7B93;
 $blue-500: #4E5E7C;
 $blue-600: #1E2330;
+$white: #fff;
+$bright-blue: #2686F4;
+$dark-blue: #303741;
+$dark-blue-2: #333742;
+$dark-blue-3: #272B34;
+$darker-blue: #181c1f;
+
 
 // Text color
 $body-color:$blue-600;
@@ -27,7 +36,7 @@ $btn-border-radius: $border-radius * 2;
 $btn-font-size: .8rem;
 $spacer: 1rem;
 $spacers: (6: ($spacer * 5), 7:($spacer * 7), 6m: ($spacer * 6));
-$theme-colors: ("primary": $blue-600,
+$theme-colors: ("primary": $bright-blue,
     "secondary":$light-blue,
     "info": $blue-200,
     "light": $light-blue,
@@ -79,3 +88,6 @@ $enable-responsive-font-sizes: true;
 
 // Modal 
 $modal-lg: 730px;
+
+// Typography
+$font-family-sans-serif: 'Josefin Sans', sans-serif;

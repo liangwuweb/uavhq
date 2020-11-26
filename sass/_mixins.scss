@@ -4,7 +4,7 @@
     }
 
     @else {
-        color: $light-blue;
+        color: $white;
     }
 }
 
@@ -103,4 +103,9 @@
     -moz-transition: $value;
     -o-transition: $value;
     transition: $value;
+}
+
+@mixin btn-text-adjust($mt: 4px) {
+      display: inline-block;
+      margin-top: $mt;
 }

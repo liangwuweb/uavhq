@@ -1,13 +1,16 @@
 nav {
-    background: $blue-500;
+    background: $bright-blue;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
 .navbar {
-    background: $blue-500;
+    background: $bright-blue;
 
     .nav-item a {
         font-size: .8rem;
-
 
         .dropdown-icon::before,
         .dropdown-icon::after {
@@ -31,7 +34,13 @@ nav {
     }
 
     .btn {
-        color: $light-blue;
+        color: $bright-blue;
+        background: #fff;
+        border: none;
+
+        span {
+            @include btn-text-adjust(2px);
+        }
     }
 }
 
@@ -45,8 +54,9 @@ nav {
 
 
 .navbar {
+
     // Navbar in collapse mode
-    @include break-max(992px) {
+    @include break-max(991px) {
         height: 64px;
         position: relative;
 
@@ -121,7 +131,7 @@ nav {
 
         .navbar-collapse {
             transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
-            z-index: 200;
+            z-index: 999;
             position: absolute;
             top: 64px;
             width: 100%;
@@ -142,24 +152,31 @@ nav {
     // Navbar in big screen
     .nav-item {
         @include break(992px) {
-               .nav-link {
-                   font-weight: $font-weight-bold;
-               }
+            .nav-link {
+                font-weight: $font-weight-normal;
+                padding-right: 1.75rem;
+                padding-left: 1.75rem;
+            }
 
-               .dropdown-menu {
-                   display: none;
-               }
+            .dropdown-menu {
+                display: none;
+                background: $dark-blue-3;
 
-               &:hover {
+                .dropdown-item {
+                    color: $bright-blue;
+                }
+            }
+
+            &:hover {
                    .nav-link {
-                       color: #fff;
+                       color: $dark-blue-2;
                    }
 
-                   .dropdown-menu {
-                       display: block;
-                   }
-               }
+                .dropdown-menu {
+                    display: block;
+                }
+            }
         }
-     
+
     }
 }
