@@ -26,5 +26,6 @@
     ],
     "liveSassCompile.settings.autoprefix": [],
     "liveSassCompile.settings.generateMap": true,
-    "liveServer.settings.donotVerifyTags": true
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.port": 5501
 }
