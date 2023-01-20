@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="400" viewBox="0 0 1280 400">
+  <g id="Group_179" data-name="Group 179" transform="translate(0 -64)">
+    <rect id="Video" width="1280" height="400" transform="translate(0 64)" fill="#dce4ef"/>
+    <path id="Path_204" data-name="Path 204" d="M177.663,112.877a1.926,1.926,0,0,0-2.964-.326l-23.856,22.506V121.4a9.4,9.4,0,0,0-9.4-9.4H66.4a9.4,9.4,0,0,0-9.4,9.4v57.268a9.4,9.4,0,0,0,9.4,9.4h75.049a9.4,9.4,0,0,0,9.4-9.4V164.849l24.479,22.656a1.9,1.9,0,0,0,3.107-.609,7.966,7.966,0,0,0,.5-2.777V117.175A7.92,7.92,0,0,0,177.663,112.877Z" transform="translate(533.537 114.244)" fill="#f3f5f9"/>
+    <g id="Buttons_Play" data-name="Buttons/Play" transform="translate(610.73 234.731)" opacity="0.997" style="isolation: isolate">
+      <path id="Path_5" data-name="Path 5" d="M10.785,6.637,0,0V13.274Z" transform="translate(25.951 22.632)" fill="#1e2330"/>
+      <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(0.269 0.269)" fill="none" stroke="#1e2330" stroke-width="2">
+        <circle cx="29" cy="29" r="29" stroke="none"/>
+        <circle cx="29" cy="29" r="28" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
